@@ -57,6 +57,12 @@ body{
   background-color: #fff;
 }
 
+.main-content{
+  display: flex;
+  flex-direction: column;
+   height: 100%;
+}
+
 .container{
    width: 100%;
    max-width: 1170px;
@@ -75,8 +81,8 @@ img{
 // HEADER STYLES
 
 
-.header {
-}
+// .header {
+// }
 .header__box {
   display: flex;
   align-items:center;
@@ -84,10 +90,11 @@ img{
   padding-bottom: 50px;
   white-space: nowrap;
 }
-.logo {
 
 
-}
+// .logo {
+// }
+
 .logo__img {
   width: 240px;
   height: 50px;
@@ -201,6 +208,93 @@ transition: background-color 0.4s ease,
 
 
 
+// FEATURES STYLES
+
+
+
+.features {
+}
+.container {
+}
+.features__box {
+ display: flex;
+ flex-direction: column;
+padding-top: 155px;
+ align-items: center;
+ padding-bottom: 190px;
+}
+
+
+
+.features__heading {
+  font-weight: 700;
+  font-size: 52px;
+  color: $heroHeadingColor;
+  margin-bottom: 110px;
+  white-space: nowrap;
+}
+.features__list {
+  display: flex;
+  gap: 57px;
+}
+.features__item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 2px 5px 10px rgb(0, 0, 0,0.4);
+   padding: 40px 45px;
+   width: 352px;
+   border-radius:15px;
+}
+
+.features__item:nth-child(1)::before{
+  content: "";
+  width: 76px;
+  height: 76px;
+ background-image:url(../img/icon-graphic.svg);
+   background-repeat:no-repeat;
+   background-position:center center;
+   background-size: contain;
+  margin-bottom: 40px;
+}
+.features__item:nth-child(2)::before{
+  content: "";
+  width: 76px;
+  height: 76px;
+ background-image:url(../img/icon-video.svg);
+   background-repeat:no-repeat;
+   background-position:center center;
+   background-size: contain;
+  margin-bottom: 40px;
+}
+.features__item:nth-child(3)::before{
+  content: "";
+  width: 76px;
+  height: 76px;
+ background-image:url(../img/icon-graphic.svg);
+   background-repeat:no-repeat;
+   background-position:center center;
+   background-size: contain;
+  margin-bottom: 40px;
+}
+
+
+.features__card-title {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+.features__card-text {
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.features__card-link {
+  text-decoration: none;
+}
+.btn {
+}
 
 
 @media
