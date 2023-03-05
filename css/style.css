@@ -38,6 +38,8 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+  margin: 0;
+  padding: 0;
   color: #000;
   background-color: #fff;
 }
@@ -45,7 +47,6 @@ body {
 .main-content {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .container {
@@ -195,6 +196,7 @@ img {
 .features__list {
   display: flex;
   gap: 57px;
+  width: 100%;
 }
 
 .features__item {
@@ -261,7 +263,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 170px;
 }
 
 .about__text-title {
@@ -282,7 +283,7 @@ img {
   padding-top: 55px;
   list-style: none;
   width: 100%;
-  gap: 30px;
+  gap: 15px;
 }
 
 .about__item {
@@ -291,7 +292,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 370px;
+  width: 33.3333333333%;
   border-radius: 12px;
   border: 1px solid #EBEAED;
 }
@@ -306,7 +307,7 @@ img {
 
 .about___human-name {
   font-size: 22px;
-  color: #1E0E62;
+  color: #261379;
   font-weight: 500;
   margin-bottom: 16px;
 }
@@ -340,6 +341,7 @@ img {
 .about__footer-item {
   border: 1px solid #ebeaed;
   padding: 18px 50px;
+  width: 33.3333333333%;
 }
 
 .about__item-link {
@@ -353,6 +355,64 @@ img {
 .about__footer-icon:hover {
   color: #FF6600;
   cursor: pointer;
+}
+
+.footer__box {
+  display: flex;
+  padding-top: 177px;
+  padding-bottom: 70px;
+  align-items: center;
+}
+
+.footer-logo {
+  display: block;
+  width: 112px;
+  cursor: pointer;
+  height: 22px;
+}
+
+.footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer__comp-link {
+  text-decoration: none;
+  margin-left: 90px;
+  color: #261379;
+  margin-right: auto;
+}
+
+.footer__comp-text {
+  font-size: 16px;
+}
+
+.footer__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer__item {
+  border-bottom: 2px solid transparent;
+}
+
+.footer__item:hover {
+  border-bottom: 2px solid #FF6600;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #261379;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+}
+
+.footer__bottom-text {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: rgba(119, 119, 119, 0.4);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {

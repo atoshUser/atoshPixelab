@@ -1,7 +1,7 @@
 $primaryColor:#FF6600;
 $bodyTextColor:#000;
 $heroHeadingColor:#0B1B35;
-$accountCardHeadingColor:#1E0E62;
+$accountCardHeadingColor:#261379;
 $cardProfessionText:rgba(21, 20, 57,0.4);
 
 
@@ -53,6 +53,8 @@ body{
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+  margin: 0;
+  padding: 0;
   color:$bodyTextColor;
   background-color: #fff;
 }
@@ -60,7 +62,7 @@ body{
 .main-content{
   display: flex;
   flex-direction: column;
-   height: 100%;
+
 }
 
 .container{
@@ -236,6 +238,7 @@ padding-top: 155px;
 .features__list {
   display: flex;
   gap: 57px;
+  width: 100%;
 }
 .features__item {
    display: flex;
@@ -300,13 +303,11 @@ padding-top: 155px;
 
 
 
-.about {
-}
 .about__box {
   display: flex;
    flex-direction: column;
    align-items: center;
-   padding-bottom: 170px;
+
 }
 .about__text-title {
 letter-spacing: 5px;
@@ -324,8 +325,8 @@ color:$heroHeadingColor;
   justify-content: center;
   padding-top: 55px;
   list-style: none;
-  width: 100%;
-  gap: 30px;
+  width:100%;
+  gap: 15px;
 
 }
 .about__item {
@@ -334,7 +335,7 @@ color:$heroHeadingColor;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 370px;
+  width: calc(100% / 3);
   border-radius:12px;
   border:1px solid #EBEAED;
 }
@@ -379,7 +380,7 @@ border-bottom-left-radius:12px;
 .about__footer-item {
   border: 1px solid #ebeaed;
   padding: 18px 50px;
-
+   width: calc(100% / 3);
 }
 .about__item-link {
   display: block;
@@ -394,23 +395,60 @@ border-bottom-left-radius:12px;
 
 }
 
+
+
 .footer__box {
+  display: flex;
+  padding-top: 177px;
+  padding-bottom: 70px;
+  align-items: center;
 }
-.logo {
+
+
+
+.footer-logo{
+  display: block;
+  width:112px;
+  cursor:pointer;
+  height: 22px;
 }
-.logo__img {
+.footer-logo:hover{
+  opacity: 0.6;
 }
 .footer__comp-link {
+text-decoration: none;
+  margin-left: 90px;
+  color:$accountCardHeadingColor;
+  margin-right: auto;
+
 }
 .footer__comp-text {
+  font-size: 16px;
 }
 .footer__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 40px;
 }
-.footer__item {
+.footer__item{
+  border-bottom: 2px solid transparent;
+}
+
+.footer__item:hover{
+  border-bottom: 2px solid  $primaryColor;
 }
 .footer__link {
+  text-decoration: none;
+  color:$accountCardHeadingColor;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
 }
 .footer__bottom-text {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color:rgb(119, 119, 119,0.4);
 }
 
 @media
@@ -426,4 +464,5 @@ only screen and (                min-resolution: 2dppx) {
      .hero{
       background-image: url(../img/joyful-guy-texting-message-smartphone2\ 1@2x.png);
      }
+
 }
