@@ -247,6 +247,7 @@ img {
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 32px;
+  white-space: nowrap;
 }
 
 .features__card-text {
